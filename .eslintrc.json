@@ -1,3 +1,32 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "import/no-named-as-default": "warn",
+    "import/no-import-module-exports": "warn",
+    "import/no-cycle": "off",
+    "react/no-unstable-nested-components": "off",
+    "react/function-component-definition": "off",
+    "react/button-has-type": "off",
+    "react/require-default-props": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "ui-testing/missing-assertion-in-test": "off",
+    "arrow-body-style": "off",
+    "no-restricted-exports": "off",
+    "class-methods-use-this": "warn"
+  }
 }
